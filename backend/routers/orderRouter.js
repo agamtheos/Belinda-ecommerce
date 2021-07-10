@@ -18,7 +18,7 @@ orderRouter.post('/',
       totalPrice: request.body.totalPrice,
     });
     const createdOrder = await order.save();
-    response.status(201).send({ message: 'New Order Created', data: createdOrder });
+    response.status(201).send({ message: 'Anda Berhasil Memesan ', data: createdOrder });
   })
 );
 export default orderRouter;

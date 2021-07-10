@@ -91,7 +91,7 @@ export const update = async({name, email, password}) => {
     return { error: err.response.data.message || err.message };
   }
 };
-export const createOrder = async() => {
+export const createOrder = async(order) => {
   try {
     const { token } = getUserInfo();
     const response = await axios({
@@ -106,6 +106,7 @@ export const createOrder = async() => {
   if ((await response).statusText !== 'OK') {
     throw new Error(response.data.message);
   }
+  return response.data;
   } catch (err) {
     return { error: err.response ? err.response.data.message : err.message };
     

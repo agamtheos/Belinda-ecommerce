@@ -116,7 +116,7 @@ const PlaceOrderScreen = {
                 <li><div>Pajak</div><div>Rp${taxPrice}</div></li>
                 <li class="total"><div>Sub Total</div><div>Rp${totalPrice}</div></li>
                 <li>
-                <button id="placeorder-button"class="fullw primary">
+                <button id="placeorder-button" class="fullw primary">
                 Pesan Sekarang
                 </button>
                 </li>
