@@ -42,6 +42,6 @@ app.use((err, request, response, next) => {
   const status = err.name && err.name === 'ValidationError' ? 400 : 500;
   response.status(status).send({message: err.message});
 });
-app.listen(5000, () => {
+app.listen(config.PORT, () => {
   console.log('berjalan pada http://localhost:5000');
 });
