@@ -5,6 +5,7 @@ import Error404Screen from './screens/Error404Screen';
 import home from './screens/home';
 import LoginScreen from './screens/LoginScreen';
 import PaymentScreen from './screens/PaymentScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import ProductScreen from './screens/ProductScreen';
 import profile from './screens/profile';
 import ShippingScreen from './screens/ShippingScreen';
@@ -20,6 +21,7 @@ const routes = {
   '/profile': profile,
   '/shipping': ShippingScreen,
   '/payment': PaymentScreen,
+  '/checkout': PlaceOrderScreen,
 };
 const router = async () => {
   showLoading();

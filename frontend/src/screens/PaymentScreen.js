@@ -48,7 +48,7 @@ const PaymentScreen = {
             </div>
           </li>
           <li>
-            <button type="submit" class="primary">Lanjutkan</button>
+            <button type="submit" class="fullw primary">Lanjutkan</button>
           </li>        
         </ul>
       </form>
