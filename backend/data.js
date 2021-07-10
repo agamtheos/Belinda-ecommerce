@@ -1,7 +1,7 @@
 export default {
   products: [
     {
-      _id: '1',
+      _id: '111111111111111111111111',
       name: 'Nike Airmax',
       category: 'Shoes',
       image: '/images/product-1.jpg',
@@ -12,7 +12,7 @@ export default {
       countInStock: 6,
     },
     {
-      _id: '2',
+      _id: '222222222222222222222222',
       name: 'New Balance Speed',
       category: 'Shoes',
       image: '/images/product-2.jpg',

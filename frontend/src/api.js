@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { apiUrl } from "./config";
 import { getUserInfo } from './localStorage';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 export const getProduct = async (id) => {
   try {
@@ -89,4 +90,25 @@ export const update = async({name, email, password}) => {
     console.log(err);
     return { error: err.response.data.message || err.message };
   }
+};
+export const createOrder = async() => {
+  try {
+    const { token } = getUserInfo();
+    const response = await axios({
+    url: `${apiUrl}/api/orders`,
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    data: order,
+  });
+  if ((await response).statusText !== 'OK') {
+    throw new Error(response.data.message);
+  }
+  } catch (err) {
+    return { error: err.response ? err.response.data.message : err.message };
+    
+  }
+  
 };
