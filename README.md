@@ -1,4 +1,4 @@
-# Toko Kita-ecommerce
+# Toko Kita E-Commerce
 
 ## Simple E-Commerce Website
 ## Build w/  : 
