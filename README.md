@@ -24,7 +24,7 @@ $ npm install
 $ npm start
 ```
 ### 4. Run Frontend
--On new Terminal root project folder
+- On new Terminal root project folder
 ```
 $ cd frontend
 $ npm run install
