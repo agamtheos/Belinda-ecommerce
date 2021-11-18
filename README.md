@@ -14,8 +14,8 @@ Download from [MongoDB](https://www.mongodb.com/try/download/community) and inst
 - Create .env file in project folder
 - Enter line :
 ```
-MONGODB_URL=mongodb://localhost/belindadb
-JWT_SECRET=somethingsecret
+MONGODB_URL=<your mongodb url>
+JWT_SECRET=<your secret token>
 ```
 ### 3. Run Backend
 - On terminal root project folder
